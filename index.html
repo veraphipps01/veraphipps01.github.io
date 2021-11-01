@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
- 
-</head>
-<body>
-    <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3">
-     <div class="container">
-        <a href="#" class="navbar-brand">Vera's Portfolio</a>
 
-    
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+   
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
+     <div class="container">
+        <a  class="navbar-brand">Vera's Portfolio</a>
+
         <button 
         class="navbar-toggler" 
         type="button" 
@@ -33,42 +38,194 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about" >About Me</a>
+                    <a class="nav-link" href="about.html" >About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacts">Get In Touch</a>
+                    <a class="nav-link" href="contacts.html">Get In Touch</a>
                 </li>
             </ul>
         </div>
      </div>
  </nav>
   
-    <!-- Showcase -->
-<section class="bg-black text-light p-5 text-center text-sm-start">
-<div class="container">
+
+
+ <!-- Landing -->
+ 
+<section id="home" class="bg-black text-light p-5 text-center text-sm-start">
+
+    <div class="container">
+      <div class="stars position-relative">
+        <div class="twinkling position-relative">
+
     <div class="d-sm-flex align-items-center justify-content-between">
-        <div>
-           <h1>Let's work <span class="text-warning">Together</span>!</h1> 
-           <p class="lead my-4">
+        <div class="m-5">
+           <h1 class="pb-3">Let's work <span class="text-warning">Together</span>!</h1> 
+           <p class="lead pb-3">
             I am a full stack software developer looking to grow and help grow. 
            </p>
-           <button class="btn btn-primary btn-lg">Let's Get In Touch</button>
+           <a class="btn btn-primary btn-lg m-1" href="about.html">Read My Story</a>
+           <a class="btn btn-light btn-lg m-1" href="#projects">Check Out My Projects</a>
         </div>
-        <img class="img-fluid w-50 d-none d-sm-block" src="img/imgbw.jpg" alt="">
+        <img class="img-fluid w-50 d-none d-sm-block pt-5" src="img/imgbw.jpg" alt="">
     </div>
+  </div>
 </div>
-
-
 </div>
+</div>
+</div>
+</div>
+   
+
+<!-- Areas Of Work -->  
+<section id="learn" class="p-0 bg-black text-light mt-5 mb-5">
+        <div class="container">
+          <div class="container-fluid">
+
+            <div class="stars position-relative">
+              <div class="twinkling position-relative">
+
+          <div class="row text-light align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h3>What I Do</h3>
+              <p class="lead">
+                Javascript, HTML, and CSS
+              </p>
+              <p>
+               At the moment I am at my third month of training with MIT xPro and my focus is on learning the fundamentals of Javascript web development. You can see the projects that I was working on during this time. They all represent exercises to gain basic knowledge of Javascript, HTML and CSS to animate pages and create interactive pages.
+              </p>
+              <a href="#projects" class="btn btn-light mt-5 mb-5">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md">
+              <img src="img/bootstrap_cheatsheet.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      </section>
+  
+      <!-- Projects -->
+      <section id="projects" class="pt-0 mt-5">
+        <div class="container">
+          <div class="stars position-relative">
+            <div class="twinkling position-relative">
+          <div class="h2 text-center p-4 text-warning" #projects>My Javascript, HTML, and CSS Projects</div> 
+          <div class="stars position-relative">
+            <div class="twinkling position-relative">
+          <div class="row text-center g-4">
+            <div class="col-4 d-flex align-self-stretch">
+
+              <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                  <h3 class="card-title mb-3">Pacman Factory</h3>
+                  <img
+                  src="img/PacMan_Screen.png"
+                  class="mb-3 img-fluid"
+                />
+                  <p class="card-text">
+                    Built in vanila JS and HTML. You can create unlimited amount of Pacmen that bounce off the walls, changing directions and just flowating chaotically on your screen. Looped audio makes it more enternaining.
+                  </p>
+                </div>
+                  <div class="card-footer p-3">
+                    <a href="https://veraphipps01.github.io/pacman_factory/" class="btn btn-primary m-1">In Action</a>
+                    <a href="https://github.com/veraphipps01/pacman_factory" class="btn btn-light m-1">GitHub Repo</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-4 d-flex align-self-stretch">
+              <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                  <h3 class="card-title mb-3">Eyes Animation</h3>
+                  <img
+                  src="img/Eyes_screen.png"
+                  class="mb-3 img-fluid"
+                />
+                  <p class="card-text">
+                    A pair of spooky eyes follow your mouse cursor as it moves around the screen. The project was build on JS, HTML and CSS.
+                  </p>
+                </div>
+                <div class="card-footer p-3">                  
+                  <a href="https://veraphipps01.github.io/eyes/eyes.html" class="btn btn-dark m-1">In Action</a>
+                  <a href="https://github.com/veraphipps01/eyes" class="btn btn-light m-1">GitHub Repo</a>
+                </div>
+                </div>
+                </div>
+              <div class="col-4 d-flex align-self-stretch">
+                <div class="card bg-dark text-light">
+                  <div class="card-body text-center">
+                  <h3 class="card-title mb-3">Boston Bus Tracker</h3>
+                  <p class="card-text">
+                    Coming Soon. Lalalalalllalallallalalalal lalalal allalal allalalla allalalalallalal.
+                  </p>
+                  </div>
+                  <div class="card-footer p-3">
+                  <a href="https://veraphipps01.github.io/pacman_factory/" class="btn btn-primary m-1">In Action</a>
+                  <a href="https://github.com/veraphipps01/pacman_factory" class="btn btn-light m-1">GitHub Repo</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+      </div>
+    </div>
+        </div>
+      </section>
+  
+
+  
+ <!--Get In Touch-->
+ <section id="learn" class="pb-0 pt-0 text-light mt-5 mb-5">
+  <div class="container">
+    <div class="stars position-relative">
+      <div class="twinkling position-relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md p-5">
+        <h2>Get In Touch</h2>
+        <p>
+          I'm looking for full-time or contract employment. If you think I may be a good fit, let's talk about a possible role for me on your team.
+        </p>
+        <a href="contacts.html" class="btn btn-light mt-3">
+          <i class="bi bi-chevron-right"></i> Get In Touch
+        </a>
+      </div>
+      <div class="col-md">
+        <img src="img/pngwing.com.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
 </section>
+  
+      <!-- Footer -->
+      <footer class="p-5 pb-3 text-white text-center position-relative">
+        <div class="container">
+          <p style="text-align: right;font-size:1rem;" class="lead mb-5 pb-5"><script>document.write(new Date().getFullYear())</script> &copy; Vera Phipps</p>
+          <a href="#home" class="position-absolute bottom-0 end-0 m-5">
+              <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+  </div>
+      </footer>
+  
+      
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+      ></script>
+   
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+  </body>
 
- 
 </html>
-
-
