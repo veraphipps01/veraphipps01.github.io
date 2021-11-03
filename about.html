@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="bootstrap.min.css">
+   
 </head>
 <body>
-
+  <div class="stars position-relative">
+    <div class="twinkling position-relative">
 
      <!-- Navbar -->
  <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
@@ -50,7 +51,10 @@
 
 <!--Title and Video-->
 
-<section id="home" class="bg-light text-dark p-5 text-center text-sm-start align-items-center">
+
+<section id="home" class="text-light p-5 text-center text-sm-start align-items-center">
+  <div class="stars position-relative">
+    <div class="twinkling position-relative">
     <div class="container">
             <div>
                <h1 class="text-center">Long Story <span class="text-warning">Short</span></h1> 
@@ -60,20 +64,14 @@
               </div>
 
 
-
-               <section class="video-container">
+               <div class="video-container">
                 <video src="https://player.vimeo.com/external/181445574.hd.mp4?s=d24f32d879305e931468d55e4d7ce6efb5a95c39&amp;profile_id=119" autoplay loop playsinline muted></video>
-                <div class="callout">
-                  <h1>Object-Fit 👍</h1>
-                  <div>The CSS Background-Size: Cover for Inline Images &amp; Videos</div>
-                </div>
-                <div class="support">
-                   <a href="http://caniuse.com/#search=object-fit">Browser Support</a><br>
-                   <a href="https://github.com/jonathantneal/fitie">Need to support IE &amp; Edge?</a>
-                </div>
+               </div>
+              </div>
+            </div>
               </section>
 
-    
+
 
 
 <!-- ABOUT-CONTENT -->
@@ -83,7 +81,7 @@
         <div class="col-md">
           <img src="img/illustration.png" class="img-fluid" alt="" />
         </div>
-        <div class="col-md p-5">
+        <div class="col-md p-5 text-light">
           <h2>How It All Began</h2>
           <p class="lead">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -103,7 +101,7 @@
     </div>
   </section>
 
-  <section id="more" class="p-5 bg-dark text-light">
+  <section id="more" class="p-5 text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
@@ -138,7 +136,7 @@
 
   <!--Get In Touch-->
 
-  <section id="learn" class="p-5 bg-secondary text-light mt-5">
+  <section id="learn" class="p-5 text-light mt-5">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
@@ -159,7 +157,7 @@
   
 
 <!-- Footer -->
-<footer  class="p-3 text-dark position-relative">
+<footer  class="p-3 text-light position-relative">
     <div class="container">
         <p style="text-align: right;font-size:1rem;" class="lead mb-5 pb-5"><script>document.write(new Date().getFullYear())</script> &copy; Vera Phipps</p>
         <a href="#home" class="position-absolute bottom-0 end-0 m-5">
@@ -176,7 +174,8 @@
   ></script>
 
 
-  
+</div>
+</div> 
 
 </body>
 </html>
