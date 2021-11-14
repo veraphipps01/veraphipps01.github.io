@@ -71,6 +71,11 @@ z-index:1;
 animation:move-twink-back 200s linear infinite;
 }
 
+.nav-text {
+font-family: 'Faster One', cursive;
+font-size: 2rem;
+}
+
 p {
   text-align: justify;
   line-height: 1.7;
