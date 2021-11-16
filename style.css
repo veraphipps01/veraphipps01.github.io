@@ -72,8 +72,9 @@ animation:move-twink-back 200s linear infinite;
 }
 
 .nav-text {
-font-family: 'Faster One', cursive;
-font-size: 2rem;
+  font-family: "Helvetica Neue"; 
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 p {
