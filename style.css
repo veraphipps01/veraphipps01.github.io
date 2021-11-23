@@ -72,9 +72,9 @@ animation:move-twink-back 200s linear infinite;
 }
 
 .nav-text {
-  font-family: "Helvetica Neue"; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
